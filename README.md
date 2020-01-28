@@ -2,6 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Install Material-UI:
+
+### `npm install @material-ui/core`
+### `npm install @material-ui/icons`
+
 In the project directory, you can run:
 
 ### `npm start`
