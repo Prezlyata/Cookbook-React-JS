@@ -46,8 +46,7 @@ class Cookbook extends Component {
 				}
 			],
 			sortBy: '',
-			filteredRecipeList: [],
-			editedRecipe: []
+			filteredRecipeList: []
 		};
 	}
 
@@ -93,7 +92,7 @@ class Cookbook extends Component {
 			description: description
 		};
 		const newFilteredRecipeList = this.state.filteredRecipeList;
-		newFilteredRecipeList.push(newRecipe);
+		newFilteredRecipeList.unshift(newRecipe);
 		this.setState({
 			filteredRecipeList: newFilteredRecipeList
 		});
@@ -111,8 +110,7 @@ class Cookbook extends Component {
 	handleEdit = (modifiedRecipe) => {
 		const filteredRecipeList = this.state.filteredRecipeList;
 		const newFilteredRecipeList = filteredRecipeList.filter((el) => el.id !== modifiedRecipe.id);
-		newFilteredRecipeList.push(modifiedRecipe);
-		console.log(newFilteredRecipeList);
+		newFilteredRecipeList.unshift(modifiedRecipe);
 		this.setState({ filteredRecipeList: newFilteredRecipeList });
 	};
 

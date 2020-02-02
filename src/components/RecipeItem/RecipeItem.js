@@ -1,5 +1,5 @@
 import React from 'react';
-import EditForm from '../EditForm';
+import EditForm from '../EditForm/EditForm';
 import { withStyles } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
